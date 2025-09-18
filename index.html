@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Big Leap Marketing</title>
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="text-gray-800">
+
+    <!-- Header / Navbar -->
+    <header class="bg-white shadow-md py-4 sticky top-0 z-50">
+        <nav class="container flex justify-between items-center">
+            <div class="flex items-center">
+                <span class="text-3xl font-bold text-blue-custom">BIG LEAP</span>
+                <span class="ml-2 font-medium">MARKETING</span>
+            </div>
+            <ul class="hidden md:flex space-x-6">
+                <li><a href="#inicio" class="hover:text-blue-custom transition-colors duration-300">Inicio</a></li>
+                <li><a href="#identidad" class="hover:text-blue-custom transition-colors duration-300">Identidad Corporativa</a></li>
+                <li><a href="#servicios" class="hover:text-blue-custom transition-colors duration-300">Servicios</a></li>
+                <li><a href="#experiencia" class="hover:text-blue-custom transition-colors duration-300">Experiencia</a></li>
+                <li><a href="#diferenciadores" class="hover:text-blue-custom transition-colors duration-300">Diferenciadores</a></li>
+            </ul>
+            <a href="#asesoria" class="bg-blue-custom text-white py-2 px-6 rounded-full hover:bg-yellow-custom transition-colors duration-300 hidden md:block">
+                Solicita tu asesoría gratuita
+            </a>
+            <button id="menu-button" class="md:hidden text-2xl">☰</button>
+        </nav>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="fixed top-0 left-0 w-full h-full bg-blue-custom text-white flex flex-col items-center justify-center space-y-6 transform -translate-x-full transition-transform duration-300 ease-in-out z-40">
+        <a href="#inicio" class="text-3xl hover:text-yellow-custom">Inicio</a>
+        <a href="#identidad" class="text-3xl hover:text-yellow-custom">Identidad Corporativa</a>
+        <a href="#servicios" class="text-3xl hover:text-yellow-custom">Servicios</a>
+        <a href="#experiencia" class="text-3xl hover:text-yellow-custom">Experiencia</a>
+        <a href="#diferenciadores" class="text-3xl hover:text-yellow-custom">Diferenciadores</a>
+        <a href="#asesoria" class="text-3xl hover:text-yellow-custom">Asesoría</a>
+    </div>
+
+    <!-- Main Content -->
+    <main class="container">
+
+        <!-- Inicio (Home) Section -->
+        <section id="inicio" class="min-h-screen flex items-center justify-center py-16">
+            <div class="flex flex-col-reverse md:flex-row items-center gap-8">
+                <div class="md:w-1/2 hero-content text-center md:text-left">
+                    <h1 class="text-5xl md:text-6xl font-extrabold text-blue-custom leading-tight">
+                        Haz el gran <span class="text-yellow-custom">salto</span> en <br>marketing inmobiliario
+                    </h1>
+                    <p class="mt-4 text-lg md:text-xl text-gray-600">
+                        Llevemos tu propiedad al siguiente nivel con estrategias innovadoras y tecnología avanzada.
+                    </p>
+                    <a href="#asesoria" class="mt-8 inline-block bg-blue-custom text-white text-lg py-4 px-8 rounded-full hover:bg-yellow-custom transition-colors duration-300">
+                        Conecta con nosotros
+                    </a>
+                    <div class="mt-8 flex justify-center md:justify-start items-center space-x-4">
+                        <span class="text-xl">
+                            <!-- SVG Ranita -->
+                            <svg class="ranita-container w-16 h-16 text-green-500" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zm-4.99 10.155c-.015.016-.03.03-.046.046a.75.75 0 01-1.06-1.06c.016-.016.031-.031.046-.046a.75.75 0 011.06 1.06zM17.01 12.155a.75.75 0 01-1.06-1.06c.016-.016.031-.031.046-.046a.75.75 0 011.06 1.06c-.016.016-.03.031-.046.046zM12 17a.75.75 0 01-.75-.75.75.75 0 011.5 0 .75.75 0 01-.75.75zM12 14.5a.75.75 0 01-.75-.75v-1.5a.75.75 0 011.5 0v1.5a.75.75 0 01-.75.75zM12 9a.75.75 0 01-.75-.75.75.75 0 011.5 0A.75.75 0 0112 9zm2.25 1.5a.75.75 0 01-.75-.75v-1.5a.75.75 0 011.5 0v1.5a.75.75 0 01-.75.75zM9.75 10.5a.75.75 0 01-.75-.75v-1.5a.75.75 0 011.5 0v1.5a.75.75 0 01-.75.75z"/>
+                            </svg>
+                        </span>
+                        <p class="text-lg font-medium">¡Conoce a nuestra mascota!</p>
+                    </div>
+                </div>
+                <div class="md:w-1/2">
+                    <img src="https://placehold.co/600x400/292524/white?text=Imagen+de+Liderazgo" alt="Imagen destacada que transmite liderazgo e innovación" class="rounded-xl shadow-lg">
+                </div>
+            </div>
+        </section>
+
+        <!-- Identidad Corporativa Section -->
+        <section id="identidad" class="py-16">
+            <h2 class="section-title">Identidad Corporativa</h2>
+            <div class="grid md:grid-cols-3 gap-8 text-center">
+                <div class="p-8 bg-white rounded-xl shadow-md transition-transform duration-300 hover:scale-105">
+                    <h3 class="text-xl font-semibold text-blue-custom">Historia</h3>
+                    <p class="mt-2 text-gray-600">Fundada en 2018 como Saberes y Emociones Group, evolucionamos a Big Leap Marketing para enfocarnos en marketing inmobiliario. Nuestra sede está en Barquisimeto, Venezuela.</p>
+                </div>
+                <div class="p-8 bg-white rounded-xl shadow-md transition-transform duration-300 hover:scale-105">
+                    <h3 class="text-xl font-semibold text-blue-custom">Misión</h3>
+                    <p class="mt-2 text-gray-600">Ofrecer soluciones innovadoras en marketing y desarrollo inmobiliario, aplicando estrategias digitales y análisis de datos para potenciar la visibilidad de propiedades.</p>
+                </div>
+                <div class="p-8 bg-white rounded-xl shadow-md transition-transform duration-300 hover:scale-105">
+                    <h3 class="text-xl font-semibold text-blue-custom">Visión</h3>
+                    <p class="mt-2 text-gray-600">Transformar el marketing inmobiliario integrando tecnología, creatividad y análisis estratégico, consolidándonos como referente global en el sector.</p>
+                </div>
+            </div>
+            <div class="mt-8 text-center">
+                <h3 class="text-2xl font-semibold text-blue-custom">Valores</h3>
+                <ul class="flex flex-wrap justify-center gap-4 mt-4 text-gray-600">
+                    <li class="p-3 bg-yellow-custom rounded-full text-white font-medium">Innovación</li>
+                    <li class="p-3 bg-yellow-custom rounded-full text-white font-medium">Excelencia</li>
+                    <li class="p-3 bg-yellow-custom rounded-full text-white font-medium">Adaptabilidad</li>
+                    <li class="p-3 bg-yellow-custom rounded-full text-white font-medium">Colaboración Internacional</li>
+                    <li class="p-3 bg-yellow-custom rounded-full text-white font-medium">Impacto Positivo</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Servicios Landing Section -->
+        <section id="servicios" class="py-16 bg-white rounded-xl shadow-md">
+            <div class="container">
+                <h2 class="section-title">Soluciones digitales que hacen saltar tu marca al siguiente nivel</h2>
+                <p class="text-center text-gray-600 mb-8">
+                    En Big Leap Marketing, combinamos estrategia y creatividad para impulsar tu marca inmobiliaria.
+                </p>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <!-- Social Media Card -->
+                    <div class="service-card p-6 bg-yellow-custom rounded-xl shadow-md text-center text-white">
+                        <div class="ranita-container">
+                            <span class="text-4xl">🐸</span>
+                        </div>
+                        <h3 class="mt-4 text-2xl font-semibold">Social Media</h3>
+                        <p class="mt-2">Estrategias de contenido, gestión de comunidades y diseño visual.</p>
+                    </div>
+                    <!-- Email Marketing Card -->
+                    <div class="service-card p-6 bg-blue-custom rounded-xl shadow-md text-center text-white">
+                        <div class="ranita-container">
+                            <span class="text-4xl">🐸</span>
+                        </div>
+                        <h3 class="mt-4 text-2xl font-semibold">Email Marketing</h3>
+                        <p class="mt-2">Campañas automatizadas y segmentación inteligente para tus clientes.</p>
+                    </div>
+                    <!-- Meta Ads Card -->
+                    <div class="service-card p-6 bg-yellow-custom rounded-xl shadow-md text-center text-white">
+                        <div class="ranita-container">
+                            <span class="text-4xl">🐸</span>
+                        </div>
+                        <h3 class="mt-4 text-2xl font-semibold">Campañas de Meta Ads</h3>
+                        <p class="mt-2">Publicidad en Facebook e Instagram con enfoque en conversión.</p>
+                    </div>
+                    <!-- Desarrollo Web Card -->
+                    <div class="service-card p-6 bg-blue-custom rounded-xl shadow-md text-center text-white">
+                        <div class="ranita-container">
+                            <span class="text-4xl">🐸</span>
+                        </div>
+                        <h3 class="mt-4 text-2xl font-semibold">Desarrollo Web</h3>
+                        <p class="mt-2">Sitios funcionales, responsivos y alineados con la identidad de marca.</p>
+                    </div>
+                </div>
+                <div class="mt-8 text-center">
+                    <p class="text-lg font-bold text-blue-custom">+85% de engagement en redes</p>
+                    <a href="#asesoria" class="mt-4 inline-block bg-blue-custom text-white py-3 px-8 rounded-full hover:bg-yellow-custom transition-colors duration-300">
+                        Solicita tu asesoría gratuita
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experiencia Landing Section -->
+        <section id="experiencia" class="py-16">
+            <div class="container">
+                <h2 class="section-title">Transformamos el sector inmobiliario con experiencia real y resultados medibles</h2>
+                <div class="grid md:grid-cols-2 gap-8 items-center">
+                    <div>
+                        <p class="text-gray-600 mb-4">
+                            Nuestra trayectoria se remonta a 2018, cuando comenzamos como Saberes y Emociones Group, una consultora tecnológica. Con el tiempo, evolucionamos hacia lo que somos hoy: Big Leap Marketing, una empresa líder en soluciones digitales para el sector inmobiliario.
+                        </p>
+                        <p class="text-gray-600 mb-4">
+                            Hemos llevado nuestra experiencia más allá de nuestras fronteras, estableciendo colaboraciones estratégicas con aliados en España, Puerto Rico, República Dominicana y Estados Unidos, logrando resultados medibles y transformando el marketing de propiedades.
+                        </p>
+                        <a href="#asesoria" class="inline-block mt-4 bg-yellow-custom text-white py-3 px-8 rounded-full hover:bg-blue-custom transition-colors duration-300">
+                            Conoce cómo podemos ayudarte
+                        </a>
+                    </div>
+                    <div class="flex justify-center items-center ranita-container">
+                        <img src="https://placehold.co/400x400/292524/white?text=Ranita+de+la+experiencia" alt="Ranita en una línea de tiempo" class="rounded-xl shadow-md">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Diferenciadores Landing Section -->
+        <section id="diferenciadores" class="py-16 bg-white rounded-xl shadow-md">
+            <div class="container">
+                <h2 class="section-title">No solo hacemos marketing. Creamos conexiones auténticas que generan resultados</h2>
+                <div class="grid md:grid-cols-2 gap-8 items-center">
+                    <div class="flex justify-center items-center ranita-container">
+                        <img src="https://placehold.co/400x400/292524/white?text=Ranita+saltando" alt="Ranita saltando" class="rounded-xl shadow-md">
+                    </div>
+                    <div>
+                        <p class="text-gray-600 mb-4">
+                            Nuestro enfoque se basa en la sinergia entre **tecnología, creatividad y análisis estratégico**. No aplicamos fórmulas genéricas; personalizamos cada solución para adaptarnos a tus necesidades y objetivos específicos.
+                        </p>
+                        <p class="text-gray-600 mb-4">
+                            Contamos con alianzas clave en el corretaje de seguros y el sector inmobiliario, lo que nos permite ofrecer una perspectiva integral y un servicio de alto valor.
+                        </p>
+                        <p class="text-gray-600 font-bold mb-4">
+                            Nuestra mascota, la ranita, simboliza nuestro espíritu: un gran salto hacia el futuro, la agilidad y la adaptabilidad.
+                        </p>
+                        <a href="#asesoria" class="inline-block mt-4 bg-blue-custom text-white py-3 px-8 rounded-full hover:bg-yellow-custom transition-colors duration-300">
+                            Descubre lo que nos hace únicos
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Asesoría Landing Section -->
+        <section id="asesoria" class="py-16">
+            <div class="container">
+                <h2 class="section-title">Da el gran salto. Nosotros te guiamos</h2>
+                <div class="bg-white p-8 rounded-xl shadow-md max-w-2xl mx-auto">
+                    <p class="text-gray-600 mb-6 text-center">
+                        Completa el siguiente formulario para solicitar tu asesoría gratuita. Nos pondremos en contacto contigo en menos de 24 horas. ¡Prepárate para el gran salto!
+                    </p>
+                    <form id="contact-form" class="space-y-4">
+                        <div>
+                            <label for="nombre" class="block text-sm font-medium text-gray-700">Nombre</label>
+                            <input type="text" id="nombre" name="nombre" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-custom focus:ring focus:ring-blue-custom focus:ring-opacity-50" required>
+                        </div>
+                        <div>
+                            <label for="correo" class="block text-sm font-medium text-gray-700">Correo electrónico</label>
+                            <input type="email" id="correo" name="correo" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-custom focus:ring focus:ring-blue-custom focus:ring-opacity-50" required>
+                        </div>
+                        <div>
+                            <label for="empresa" class="block text-sm font-medium text-gray-700">Empresa / Proyecto</label>
+                            <input type="text" id="empresa" name="empresa" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-custom focus:ring focus:ring-blue-custom focus:ring-opacity-50">
+                        </div>
+                        <div>
+                            <label for="servicio" class="block text-sm font-medium text-gray-700">Servicio de interés</label>
+                            <select id="servicio" name="servicio" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-custom focus:ring focus:ring-blue-custom focus:ring-opacity-50">
+                                <option value="">Selecciona un servicio</option>
+                                <option value="Social Media">Social Media</option>
+                                <option value="Email Marketing">Email Marketing</option>
+                                <option value="Meta Ads">Campañas de Meta Ads</option>
+                                <option value="Desarrollo Web">Desarrollo Web</option>
+                                <option value="Otro">Otro</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="mensaje" class="block text-sm font-medium text-gray-700">Mensaje</label>
+                            <textarea id="mensaje" name="mensaje" rows="4" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-custom focus:ring focus:ring-blue-custom focus:ring-opacity-50"></textarea>
+                        </div>
+                        <div class="text-center">
+                            <button type="submit" class="w-full bg-blue-custom text-white py-3 px-8 rounded-full hover:bg-yellow-custom transition-colors duration-300">
+                                Enviar solicitud
+                            </button>
+                        </div>
+                    </form>
+                    <div class="mt-8 text-center">
+                        <p class="text-gray-600">O contáctanos directamente:</p>
+                        <div class="flex justify-center space-x-4 mt-2">
+                            <a href="#" class="text-blue-custom hover:text-yellow-custom transition-colors duration-300">WhatsApp</a>
+                            <a href="#" class="text-blue-custom hover:text-yellow-custom transition-colors duration-300">Redes Sociales</a>
+                            <a href="#" class="text-blue-custom hover:text-yellow-custom transition-colors duration-300">Dirección Física</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-blue-custom text-white py-8 mt-16 text-center">
+        <p>&copy; 2025 Big Leap Marketing. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="script.js" defer></script>
+</body>
+</html>

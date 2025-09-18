@@ -1,0 +1,65 @@
+/* Importar fuentes y Tailwind CSS */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+/* Estilos personalizados */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f7f9fc;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+.section-title {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #272727;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+.text-yellow-custom {
+    color: #20D954;
+}
+.bg-yellow-custom {
+    background-color: #20D954;
+}
+.bg-blue-custom {
+    background-color: #272727;
+}
+.border-blue-custom {
+    border-color: #272727;
+}
+.ranita-container {
+    position: relative;
+    animation: bounce 2s infinite;
+}
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+.service-card {
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    cursor: pointer;
+}
+.service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+/* Responsividad para móviles */
+@media (max-width: 768px) {
+    .section-title {
+        font-size: 2rem;
+    }
+    .hero-section {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    .hero-content {
+        margin-top: 2rem;
+    }
+}
