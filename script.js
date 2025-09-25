@@ -5,7 +5,6 @@ const navLinks = document.querySelectorAll('#mobile-menu a');
 
 function toggleMenu() {
     mobileMenu.classList.toggle('-translate-x-full');
-    // Animación de escala al abrir/cerrar menú
     menuButton.classList.add('scale-110');
     setTimeout(() => {
         menuButton.classList.remove('scale-110');
@@ -24,7 +23,6 @@ navLinks.forEach(link => {
 const form = document.getElementById('contact-form');
 form.addEventListener('submit', function(event) {
     event.preventDefault();
-    // En una aplicación real, se enviaría esta información a un backend.
     console.log('Formulario enviado:', {
         nombre: document.getElementById('nombre').value,
         correo: document.getElementById('correo').value,
@@ -33,7 +31,6 @@ form.addEventListener('submit', function(event) {
         mensaje: document.getElementById('mensaje').value
     });
 
-    // En lugar de alert(), usamos un mensaje de confirmación en la UI.
     const formContainer = form.parentElement;
     const confirmationMessage = document.createElement('div');
     confirmationMessage.className = 'text-center mt-4 p-4 rounded-xl bg-[#20D954] text-white opacity-0 animate-fadeIn';
@@ -50,3 +47,33 @@ form.addEventListener('submit', function(event) {
 
 // Animación personalizada fadeIn
 const style = document.createElement('style');
+
+// ------------------- SLIDER DE SERVICIOS -------------------
+const carousel = document.getElementById('carousel');
+const nextBtn = document.getElementById('next');
+const prevBtn = document.getElementById('prev');
+let offset = 0;
+
+function updateCarousel() {
+    carousel.style.transform = `translateX(-${offset}%)`;
+}
+
+nextBtn?.addEventListener('click', () => {
+    const maxOffset = (carousel.children.length - 4) * 25; // cada card ocupa 25% del ancho total
+    if (offset < maxOffset) {
+        offset += 25;
+        updateCarousel();
+    }
+});
+
+prevBtn?.addEventListener('click', () => {
+    if (offset > 0) {
+        offset -= 25;
+        updateCarousel();
+    }
+});
+
+// Configuración inicial
+carousel.style.display = 'flex';
+carousel.style.transition = 'transform 0.5s ease-in-out';
+updateCarousel();
